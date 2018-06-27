@@ -1,0 +1,45 @@
+import java.util.Scanner ;
+public class Lab01v2_06
+{ 
+  public static void main (String[]args)
+  {
+    Scanner scan = new Scanner(System.in) ;
+    int h ;
+    int gap ;
+    int c ;
+    int star ;
+    h = scan.nextInt();
+    int line=1;
+    int n=1 ;
+    int l=h ;
+    for( c=0 ; c<h ; c++)
+    { 
+      for( gap=0 ; gap<l-line ; gap++)
+      { 
+        System.out.print(" ");
+      }
+      for( star=0 ; star<n; star++)
+      { 
+        System.out.print("*");
+      }
+      System.out.println() ;
+      n=n+2 ; 
+      l=l-1 ;
+    }
+
+    for( c=0 ; c<h ; c++)
+    { 
+      for( gap=0 ; gap<l-line ; gap++)
+      { 
+        System.out.print(" ");
+      }
+      for( star=0 ; star<n; star++)
+      { 
+        System.out.print("*");
+      }
+      System.out.println() ;
+      n=n-2 ; 
+      l=l+1 ;
+    }
+  }
+}

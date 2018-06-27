@@ -1,0 +1,32 @@
+import java.util.Scanner ;
+public class Lab01v2_20
+{ public static void main (String[]args)
+  { Scanner scan = new Scanner(System.in) ;
+  int h;
+  int c;
+  int i;
+  int n = 1;
+  h=scan.nextInt() ;
+  for(i=0;i<h;i++)
+  {
+    for(c=0; c<n ; c++)
+
+    {
+     if(i==0||i==h-1||c==0||c==n-1) 
+     {
+
+       {
+       System.out.print(n) ;
+       }
+    }
+    else
+    {
+     System.out.print(" ");
+     }
+
+    }
+    System.out.println() ;
+    n++;
+}
+}
+}

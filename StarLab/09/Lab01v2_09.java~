@@ -1,0 +1,34 @@
+import java.util.Scanner ;
+public class Lab01v2_09
+{ 
+  public static void main (String[]args)
+  { 
+    Scanner scan = new Scanner(System.in) ;
+    int h;
+    int j=0;
+    h=scan.nextInt();
+    for(int i=0; i<h; i++)
+    {
+    for(int c=h; c!=0; c--)
+    {
+      System.out.print(" ");
+
+      if(c==j+1)
+      {
+       System.out.print("*");
+       j++;
+      }
+    
+    if(c==1)
+   {
+     for(int a=0; a<h; a++)
+     {
+     System.out.print("*");
+     }
+   }
+    }
+    System.out.print("*");
+    System.out.println();
+    }
+  }
+}
